@@ -28,7 +28,7 @@ func Require(err error) {
 }
 
 // whatever os.Open is with the error triggering a fail
-func Open(filename string) *io.ReadWriter {
-}
-
+func Open(name string) (file *File) { }
+func OpenWrite(name string) (file *File) { }
+// etc.
 ```
